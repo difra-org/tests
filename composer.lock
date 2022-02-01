@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4e97125dbe7de18ba93bf4aef6bb350",
+    "content-hash": "0bab07427e0a56396e45278139797b50",
     "packages": [
         {
             "name": "components/font-awesome",
@@ -237,12 +237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/difra.git",
-                "reference": "82379daebeec7a3b95a0ee7bafde0d0bfc4da594"
+                "reference": "00e6b3f4c0af3f014e1c67f1124d8c652c264708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/difra-org/difra/zipball/82379daebeec7a3b95a0ee7bafde0d0bfc4da594",
-                "reference": "82379daebeec7a3b95a0ee7bafde0d0bfc4da594",
+                "url": "https://api.github.com/repos/difra-org/difra/zipball/00e6b3f4c0af3f014e1c67f1124d8c652c264708",
+                "reference": "00e6b3f4c0af3f014e1c67f1124d8c652c264708",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +290,7 @@
                 "issues": "https://github.com/difra-org/difra/issues",
                 "source": "https://github.com/difra-org/difra/tree/master"
             },
-            "time": "2022-02-01T14:42:11+00:00"
+            "time": "2022-02-01T15:12:17+00:00"
         },
         {
             "name": "difra/fontawesome5",
@@ -415,12 +415,48 @@
             "time": "2022-02-01T13:44:14+00:00"
         },
         {
+            "name": "difra/lib-unify",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/lib-unify.git",
+                "reference": "79f4633d73deab7573119d68820f2e746c698c85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/lib-unify/archive/1.0.0.zip"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Difra\\Unify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "Class-self-described ORM library",
+            "support": {
+                "issues": "https://github.com/difra-org/lib-unify/issues",
+                "source": "https://github.com/difra-org/lib-unify/tree/master"
+            },
+            "time": "2022-02-01T15:45:21+00:00"
+        },
+        {
             "name": "difra/lib-wordforms",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/lib-wordforms.git",
-                "reference": "954ee6029b77353cf8a73922ecb53ff9dd63f466"
+                "reference": "8bbe5e9b1be7931d9bbf54b5a5813757973a9bb3"
             },
             "dist": {
                 "type": "zip",
@@ -449,9 +485,9 @@
             "description": "Filters and sanitizers",
             "support": {
                 "issues": "https://github.com/difra-org/lib-wordforms/issues",
-                "source": "https://github.com/difra-org/lib-wordforms/tree/1.0.0"
+                "source": "https://github.com/difra-org/lib-wordforms/tree/master"
             },
-            "time": "2022-02-01T15:09:11+00:00"
+            "time": "2022-02-01T15:43:54+00:00"
         },
         {
             "name": "difra/users",
@@ -459,7 +495,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/users.git",
-                "reference": "017d39f74a4e7feb94d33e2b78cd58be616acc75"
+                "reference": "da8efbd98bb56390b90197780b84f00da5f1819f"
             },
             "dist": {
                 "type": "zip",
@@ -467,7 +503,8 @@
             },
             "require": {
                 "difra/capcha": "~1.0.0",
-                "difra/difra": "8.0.*"
+                "difra/difra": "8.0.*",
+                "difra/lib-wordforms": "~1.0.0"
             },
             "default-branch": true,
             "type": "library",
@@ -497,7 +534,7 @@
                 "issues": "https://github.com/difra-org/users/issues",
                 "source": "https://github.com/difra-org/users/tree/master"
             },
-            "time": "2022-02-01T14:44:08+00:00"
+            "time": "2022-02-01T15:41:25+00:00"
         },
         {
             "name": "scssphp/scssphp",
@@ -2834,6 +2871,12 @@
             "alias_normalized": "1.0.0.0"
         },
         {
+            "package": "difra/lib-unify",
+            "version": "9999999-dev",
+            "alias": "1.0.0",
+            "alias_normalized": "1.0.0.0"
+        },
+        {
             "package": "difra/lib-wordforms",
             "version": "9999999-dev",
             "alias": "1.0.0",
@@ -2856,6 +2899,7 @@
         "difra/users": 20,
         "difra/capcha": 20,
         "difra/lib-security": 20,
+        "difra/lib-unify": 20,
         "difra/lib-wordforms": 20
     },
     "prefer-stable": false,
