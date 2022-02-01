@@ -1,0 +1,17 @@
+<ruleset name="Difra">
+	<description>PSR2 + stuff</description>
+
+	<rule ref="PSR2">
+		<exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+	</rule>
+
+	<exclude-pattern>../fw/lib/bootstrap.php</exclude-pattern>
+	<exclude-pattern>../fw/lib/Libs/ESAPI</exclude-pattern>
+	<exclude-pattern>../fw/lib/Libs/Less</exclude-pattern>
+	<exclude-pattern>../plugins/Editor/ckeditor</exclude-pattern>
+	<exclude-pattern>../plugins/jQueryUI/css</exclude-pattern>
+	<exclude-pattern>../plugins/jQueryUI/js</exclude-pattern>
+	<exclude-pattern>../old-plugins</exclude-pattern>
+	<exclude-pattern>../fw/js/all/jquery</exclude-pattern>
+	<exclude-pattern>../tests</exclude-pattern>
+</ruleset>

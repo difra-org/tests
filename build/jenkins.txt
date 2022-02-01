@@ -1,0 +1,11 @@
+Please note: you may need to use 'java -jar jenkins-cli.jar' instead of 'jenkins-cli'. Replace localhost with host name running jenkins.
+1. Install required plugins:
+jenkins-cli -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations warnings xunit
+2. Restart jenkins:
+jenkis-cli -s http://localhost:8080 safe-restart
+3. Add job:
+cat jenkins.xml | jenkins-cli -s http://localhost:8080 create-job Difra
+4. Configure SCM in job settings
+5. Configure Schedule in job settings
+6. Enable job
+
