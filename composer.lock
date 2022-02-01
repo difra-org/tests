@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bab07427e0a56396e45278139797b50",
+    "content-hash": "cbeeabc2a885fc5c7448405ffdef1795",
     "packages": [
         {
             "name": "components/font-awesome",
@@ -95,67 +95,19 @@
             "time": "2021-03-20T19:13:42+00:00"
         },
         {
-            "name": "difra/adm",
+            "name": "difra/binding-bootstrap4",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/difra-org/adm.git",
-                "reference": "42b869038758e21ee21f844b75d08ccedbe68046"
+                "url": "https://github.com/difra-org/binding-bootstrap4.git",
+                "reference": "28a67a225823d6a079493c444b1177cacb373836"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/adm/archive/1.0.0.zip"
+                "url": "https://github.com/difra-org/binding-bootstrap4/archive/refs/tags/8.0.2.zip"
             },
             "require": {
-                "difra/bootstrap4": "*",
-                "difra/difra": "8.0.*",
-                "difra/fontawesome5": "*",
-                "difra/jquery3": "*"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "main.php"
-                ],
-                "classmap": [
-                    "src/Controller/Adm.php"
-                ],
-                "psr-4": {
-                    "Difra\\Adm\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Eduard Kutuev",
-                    "email": "ed@napych.com"
-                }
-            ],
-            "description": "Difra Administration interface",
-            "support": {
-                "issues": "https://github.com/difra-org/adm/issues",
-                "source": "https://github.com/difra-org/adm/tree/master"
-            },
-            "time": "2022-02-01T14:42:25+00:00"
-        },
-        {
-            "name": "difra/bootstrap4",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/difra-org/bootstrap4.git",
-                "reference": "4c2c8d2f28f216c1d945679904a79518fd60423c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/difra-org/bootstrap4/archive/1.0.1.zip"
-            },
-            "require": {
-                "difra/jquery3": "*",
+                "difra/binding-jquery3": "~8.0.0",
                 "twbs/bootstrap": "4.*"
             },
             "default-branch": true,
@@ -175,31 +127,31 @@
             ],
             "authors": [
                 {
-                    "name": "Eduard Kutuev",
+                    "name": "Ed Kutuev",
                     "email": "ed@napych.com"
                 }
             ],
-            "description": "Bootstrap 4 bindings for Difra framework",
+            "description": "Bootstrap 4 bindings for Difra",
             "support": {
-                "issues": "https://github.com/difra-org/bootstrap4/issues",
-                "source": "https://github.com/difra-org/bootstrap4/tree/master"
+                "issues": "https://github.com/difra-org/binding-bootstrap4/issues",
+                "source": "https://github.com/difra-org/binding-bootstrap4/tree/master"
             },
-            "time": "2022-01-31T04:37:48+00:00"
+            "time": "2022-02-01T20:04:27+00:00"
         },
         {
-            "name": "difra/capcha",
+            "name": "difra/binding-ckeditor",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/difra-org/capcha.git",
-                "reference": "00c034251080d5cd6fd839bb8227f5379171a76a"
+                "url": "https://github.com/difra-org/binding-ckeditor.git",
+                "reference": "3653ab66c380ad3cb63c232e9d9b681e89f92c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/capcha/archive/1.0.0.zip"
+                "url": "https://github.com/difra-org/binding-ckeditor/archive/refs/tags/8.0.0.zip"
             },
             "require": {
-                "difra/difra": "8.0.*"
+                "difra/difra": "~8.0.0"
             },
             "default-branch": true,
             "type": "library",
@@ -207,11 +159,8 @@
                 "files": [
                     "main.php"
                 ],
-                "classmap": [
-                    "src/Capcha.php"
-                ],
                 "psr-4": {
-                    "Difra\\Capcha\\": "src"
+                    "Difra\\Editor\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -220,16 +169,102 @@
             ],
             "authors": [
                 {
-                    "name": "Eduard Kutuev",
-                    "email": "nap@napych.com"
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
                 }
             ],
-            "description": "Capcha plugin for Difra framework",
+            "description": "CKEditor bindings for Difra",
             "support": {
-                "issues": "https://github.com/difra-org/capcha/issues",
-                "source": "https://github.com/difra-org/capcha/tree/master"
+                "issues": "https://github.com/difra-org/binding-ckeditor/issues",
+                "source": "https://github.com/difra-org/binding-ckeditor/tree/8.0.0"
             },
-            "time": "2022-02-01T14:42:56+00:00"
+            "time": "2022-02-01T19:41:57+00:00"
+        },
+        {
+            "name": "difra/binding-fontawesome5",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/binding-fontawesome5.git",
+                "reference": "1cc9fcdba52e88c94e3099eaf27347416ef02db1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/binding-fontawesome5/archive/refs/tags/8.0.1.zip"
+            },
+            "require": {
+                "components/font-awesome": "5.*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "main.php"
+                ],
+                "classmap": [],
+                "psr-4": {
+                    "Difra\\Fontawesome5\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "Font Awesome 5 bindings for Difra",
+            "support": {
+                "issues": "https://github.com/difra-org/binding-fontawesome5/issues",
+                "source": "https://github.com/difra-org/binding-fontawesome5/tree/8.0.1"
+            },
+            "time": "2022-02-01T19:18:34+00:00"
+        },
+        {
+            "name": "difra/binding-jquery3",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/binding-jquery3.git",
+                "reference": "91387ba6bbc60e15f896a23d0b8bacd3d4d02225"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/jquery3/archive/8.0.0.zip"
+            },
+            "require": {
+                "components/jquery": "3.*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "main.php"
+                ],
+                "classmap": [],
+                "psr-4": {
+                    "Difra\\Jquery3\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "jQuery bindings for Difra",
+            "support": {
+                "issues": "https://github.com/difra-org/binding-jquery3/issues",
+                "source": "https://github.com/difra-org/binding-jquery3/tree/8.0.0"
+            },
+            "time": "2022-02-01T19:24:13+00:00"
         },
         {
             "name": "difra/difra",
@@ -237,16 +272,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/difra.git",
-                "reference": "00e6b3f4c0af3f014e1c67f1124d8c652c264708"
+                "reference": "5da084bf80e61722b2d41ede0908ddc4f7f335be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/difra-org/difra/zipball/00e6b3f4c0af3f014e1c67f1124d8c652c264708",
-                "reference": "00e6b3f4c0af3f014e1c67f1124d8c652c264708",
+                "url": "https://api.github.com/repos/difra-org/difra/zipball/5da084bf80e61722b2d41ede0908ddc4f7f335be",
+                "reference": "5da084bf80e61722b2d41ede0908ddc4f7f335be",
                 "shasum": ""
             },
             "require": {
-                "difra/lib-security": "1.0.*",
+                "difra/lib-cache": "~8.0.0",
+                "difra/lib-db": "~8.0.0",
+                "difra/lib-security": "~8.0.0",
                 "ext-ctype": "*",
                 "ext-curl": "*",
                 "ext-date": "*",
@@ -290,32 +327,28 @@
                 "issues": "https://github.com/difra-org/difra/issues",
                 "source": "https://github.com/difra-org/difra/tree/master"
             },
-            "time": "2022-02-01T15:12:17+00:00"
+            "time": "2022-02-01T20:05:15+00:00"
         },
         {
-            "name": "difra/fontawesome5",
+            "name": "difra/lib-cache",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/difra-org/fontawesome5.git",
-                "reference": "55f342a266dca69737ad189c1301cadcb1c7b2b8"
+                "url": "https://github.com/difra-org/lib-cache.git",
+                "reference": "c19d354a909a65aeff5c2b0d3de7c68a8edb058e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/fontawesome5/archive/1.0.0.zip"
-            },
-            "require": {
-                "components/font-awesome": "5.*"
+                "url": "https://github.com/difra-org/lib-cache/archive/8.0.0.zip"
             },
             "default-branch": true,
             "type": "library",
             "autoload": {
-                "files": [
-                    "main.php"
+                "classmap": [
+                    "src/Cache.php"
                 ],
-                "classmap": [],
                 "psr-4": {
-                    "Difra\\Fontawesome5\\": "src"
+                    "Difra\\Cache\\": "src/Cache"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -324,41 +357,37 @@
             ],
             "authors": [
                 {
-                    "name": "Eduard Kutuev",
+                    "name": "Ed Kutuev",
                     "email": "ed@napych.com"
                 }
             ],
-            "description": "Font Awesome 5 bindings for Difra framework",
+            "description": "Backend-independent caching library",
             "support": {
-                "issues": "https://github.com/difra-org/fontawesome5/issues",
-                "source": "https://github.com/difra-org/fontawesome5/tree/master"
+                "issues": "https://github.com/difra-org/lib-cache/issues",
+                "source": "https://github.com/difra-org/lib-cache/tree/8.0.0"
             },
-            "time": "2022-02-01T14:43:27+00:00"
+            "time": "2022-02-01T18:47:55+00:00"
         },
         {
-            "name": "difra/jquery3",
+            "name": "difra/lib-db",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/difra-org/jquery3.git",
-                "reference": "48c2e46ba433e4a4429b622ba67a01b74662720b"
+                "url": "https://github.com/difra-org/lib-db.git",
+                "reference": "c9e6e1c6c96637b5ceaa910050ab9011687ae12d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/jquery3/archive/1.0.0.zip"
-            },
-            "require": {
-                "components/jquery": "3.*"
+                "url": "https://github.com/difra-org/lib-db/archive/8.0.0.zip"
             },
             "default-branch": true,
             "type": "library",
             "autoload": {
-                "files": [
-                    "main.php"
+                "classmap": [
+                    "src/DB.php"
                 ],
-                "classmap": [],
                 "psr-4": {
-                    "Difra\\Jquery3\\": "src"
+                    "Difra\\DB\\": "src/DB"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -367,16 +396,16 @@
             ],
             "authors": [
                 {
-                    "name": "Eduard Kutuev",
+                    "name": "Ed Kutuev",
                     "email": "ed@napych.com"
                 }
             ],
-            "description": "jQuery bindings for Difra framework",
+            "description": "SQL database adapter library",
             "support": {
-                "issues": "https://github.com/difra-org/jquery3/issues",
-                "source": "https://github.com/difra-org/jquery3/tree/master"
+                "issues": "https://github.com/difra-org/lib-db/issues",
+                "source": "https://github.com/difra-org/lib-db/tree/8.0.0"
             },
-            "time": "2022-02-01T14:43:46+00:00"
+            "time": "2022-02-01T18:45:34+00:00"
         },
         {
             "name": "difra/lib-security",
@@ -384,11 +413,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/lib-security.git",
-                "reference": "dbe19fc7ba6e04ea742d2842df6e93855e8a2297"
+                "reference": "ee4096add449b509fcb3742e42a73c63d20a5f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/lib-security/archive/1.0.0.zip"
+                "url": "https://github.com/difra-org/lib-security/archive/8.0.0.zip"
             },
             "default-branch": true,
             "type": "library",
@@ -410,9 +439,9 @@
             "description": "Filters and sanitizers",
             "support": {
                 "issues": "https://github.com/difra-org/lib-security/issues",
-                "source": "https://github.com/difra-org/lib-security/tree/1.0.0"
+                "source": "https://github.com/difra-org/lib-security/tree/8.0.0"
             },
-            "time": "2022-02-01T13:44:14+00:00"
+            "time": "2022-02-01T18:48:52+00:00"
         },
         {
             "name": "difra/lib-unify",
@@ -420,11 +449,14 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/lib-unify.git",
-                "reference": "79f4633d73deab7573119d68820f2e746c698c85"
+                "reference": "3fd637304001d54e1a8397b49d3ef6122f89160c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/lib-unify/archive/1.0.0.zip"
+                "url": "https://github.com/difra-org/lib-unify/archive/8.0.0.zip"
+            },
+            "require": {
+                "difra/lib-db": "~8.0.0"
             },
             "default-branch": true,
             "type": "library",
@@ -446,9 +478,9 @@
             "description": "Class-self-described ORM library",
             "support": {
                 "issues": "https://github.com/difra-org/lib-unify/issues",
-                "source": "https://github.com/difra-org/lib-unify/tree/master"
+                "source": "https://github.com/difra-org/lib-unify/tree/8.0.0"
             },
-            "time": "2022-02-01T15:45:21+00:00"
+            "time": "2022-02-01T18:51:45+00:00"
         },
         {
             "name": "difra/lib-wordforms",
@@ -456,11 +488,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/difra-org/lib-wordforms.git",
-                "reference": "8bbe5e9b1be7931d9bbf54b5a5813757973a9bb3"
+                "reference": "59662c6fa1178215888e093e8735e57e171c9efe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/lib-wordforms/archive/1.0.0.zip"
+                "url": "https://github.com/difra-org/lib-wordforms/archive/8.0.0.zip"
             },
             "default-branch": true,
             "type": "library",
@@ -485,26 +517,166 @@
             "description": "Filters and sanitizers",
             "support": {
                 "issues": "https://github.com/difra-org/lib-wordforms/issues",
-                "source": "https://github.com/difra-org/lib-wordforms/tree/master"
+                "source": "https://github.com/difra-org/lib-wordforms/tree/8.0.0"
             },
-            "time": "2022-02-01T15:43:54+00:00"
+            "time": "2022-02-01T18:52:39+00:00"
         },
         {
-            "name": "difra/users",
+            "name": "difra/plugin-admin",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/difra-org/users.git",
-                "reference": "da8efbd98bb56390b90197780b84f00da5f1819f"
+                "url": "https://github.com/difra-org/plugin-admin.git",
+                "reference": "1b0c270a49792efee7e3676fb3c0d043510e7275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/difra-org/users/archive/1.0.3.zip"
+                "url": "https://github.com/difra-org/plugin-admin/archive/refs/tags/8.0.0.zip"
             },
             "require": {
-                "difra/capcha": "~1.0.0",
+                "difra/binding-bootstrap4": "~8.0.0",
+                "difra/binding-fontawesome5": "~8.0.0",
+                "difra/binding-jquery3": "~8.0.0",
+                "difra/difra": "~8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "main.php"
+                ],
+                "classmap": [
+                    "src/Controller/Adm.php"
+                ],
+                "psr-4": {
+                    "Difra\\Adm\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "Difra Administration interface",
+            "support": {
+                "issues": "https://github.com/difra-org/plugin-admin/issues",
+                "source": "https://github.com/difra-org/plugin-admin/tree/8.0.0"
+            },
+            "time": "2022-02-01T19:30:47+00:00"
+        },
+        {
+            "name": "difra/plugin-captcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/plugin-captcha.git",
+                "reference": "7176bb19f47d50eb675a687bda717cf8012d485b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/plugin-captcha/archive/refs/tags/8.0.0.zip"
+            },
+            "require": {
                 "difra/difra": "8.0.*",
-                "difra/lib-wordforms": "~1.0.0"
+                "ext-imagick": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "main.php"
+                ],
+                "classmap": [
+                    "src/Captcha.php"
+                ],
+                "psr-4": {
+                    "Difra\\Capcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "Captcha plugin for Difra",
+            "support": {
+                "issues": "https://github.com/difra-org/plugin-captcha/issues",
+                "source": "https://github.com/difra-org/plugin-captcha/tree/8.0.0"
+            },
+            "time": "2022-02-01T20:02:01+00:00"
+        },
+        {
+            "name": "difra/plugin-cms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/plugin-cms.git",
+                "reference": "cd825ab005991e674a00d00b663de21294fa401f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/plugin-cms/archive/refs/tags/8.0.0.zip"
+            },
+            "require": {
+                "difra/binding-ckeditor": "~8.0.0",
+                "difra/difra": "~8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "main.php"
+                ],
+                "classmap": [
+                    "src/CMS.php"
+                ],
+                "psr-4": {
+                    "Difra\\CMS\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
+                }
+            ],
+            "description": "Simple CMS plugin for Difra",
+            "support": {
+                "issues": "https://github.com/difra-org/plugin-cms/issues",
+                "source": "https://github.com/difra-org/plugin-cms/tree/master"
+            },
+            "time": "2022-02-01T20:16:38+00:00"
+        },
+        {
+            "name": "difra/plugin-users",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/difra-org/plugin-users.git",
+                "reference": "1a26884ed2a4e24ced9f23bd77b72aa73925c28e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/difra-org/plugin-users/archive/refs/tags/8.0.0.zip"
+            },
+            "require": {
+                "difra/difra": "~8.0.0",
+                "difra/lib-wordforms": "~8.0.0",
+                "difra/plugin-captcha": "~8.0.0"
             },
             "default-branch": true,
             "type": "library",
@@ -525,16 +697,16 @@
             ],
             "authors": [
                 {
-                    "name": "Eduard Kutuev",
-                    "email": "nap@napych.com"
+                    "name": "Ed Kutuev",
+                    "email": "ed@napych.com"
                 }
             ],
             "description": "Users plugin for Difra framework",
             "support": {
-                "issues": "https://github.com/difra-org/users/issues",
-                "source": "https://github.com/difra-org/users/tree/master"
+                "issues": "https://github.com/difra-org/plugin-users/issues",
+                "source": "https://github.com/difra-org/plugin-users/tree/master"
             },
-            "time": "2022-02-01T15:41:25+00:00"
+            "time": "2022-02-01T20:14:56+00:00"
         },
         {
             "name": "scssphp/scssphp",
@@ -2829,22 +3001,28 @@
     ],
     "aliases": [
         {
-            "package": "difra/adm",
+            "package": "difra/binding-bootstrap4",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
-            "package": "difra/bootstrap4",
+            "package": "difra/binding-ckeditor",
             "version": "9999999-dev",
-            "alias": "1.0.1",
-            "alias_normalized": "1.0.1.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
-            "package": "difra/capcha",
+            "package": "difra/binding-fontawesome5",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
+        },
+        {
+            "package": "difra/binding-jquery3",
+            "version": "9999999-dev",
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
             "package": "difra/difra",
@@ -2853,54 +3031,76 @@
             "alias_normalized": "8.0.0.0"
         },
         {
-            "package": "difra/fontawesome5",
+            "package": "difra/lib-cache",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
-            "package": "difra/jquery3",
+            "package": "difra/lib-db",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
             "package": "difra/lib-security",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
             "package": "difra/lib-unify",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
             "package": "difra/lib-wordforms",
             "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         },
         {
-            "package": "difra/users",
+            "package": "difra/plugin-admin",
             "version": "9999999-dev",
-            "alias": "1.0.3",
-            "alias_normalized": "1.0.3.0"
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
+        },
+        {
+            "package": "difra/plugin-captcha",
+            "version": "9999999-dev",
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
+        },
+        {
+            "package": "difra/plugin-cms",
+            "version": "9999999-dev",
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
+        },
+        {
+            "package": "difra/plugin-users",
+            "version": "9999999-dev",
+            "alias": "8.0.0",
+            "alias_normalized": "8.0.0.0"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "difra/difra": 20,
-        "difra/bootstrap4": 20,
-        "difra/jquery3": 20,
-        "difra/adm": 20,
-        "difra/fontawesome5": 20,
-        "difra/users": 20,
-        "difra/capcha": 20,
+        "difra/binding-bootstrap4": 20,
+        "difra/binding-ckeditor": 20,
+        "difra/binding-fontawesome5": 20,
+        "difra/binding-jquery3": 20,
+        "difra/lib-cache": 20,
+        "difra/lib-db": 20,
         "difra/lib-security": 20,
         "difra/lib-unify": 20,
-        "difra/lib-wordforms": 20
+        "difra/lib-wordforms": 20,
+        "difra/plugin-admin": 20,
+        "difra/plugin-captcha": 20,
+        "difra/plugin-cms": 20,
+        "difra/plugin-users": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
