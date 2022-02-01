@@ -13,7 +13,9 @@
         "difra/adm": "dev-master as 1.0.0",
         "difra/fontawesome5": "dev-master as 1.0.0",
         "difra/users": "dev-master as 1.0.3",
-        "difra/capcha": "dev-master as 1.0.0"
+        "difra/capcha": "dev-master as 1.0.0",
+        "difra/lib-security": "dev-master as 1.0.0",
+        "difra/lib-wordforms": "dev-master as 1.0.0"
     },
     "autoload": {
         "psr-4": {
