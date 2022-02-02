@@ -14,6 +14,7 @@
         "difra/binding-jquery3": "dev-master as 8.0.0",
         "difra/lib-cache": "dev-master as 8.0.0",
         "difra/lib-db": "dev-master as 8.0.0",
+        "difra/lib-logger": "dev-master as 8.0.0",
         "difra/lib-security": "dev-master as 8.0.0",
         "difra/lib-unify": "dev-master as 8.0.0",
         "difra/lib-wordforms": "dev-master as 8.0.0",
