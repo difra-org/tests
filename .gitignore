@@ -2,3 +2,5 @@
 /.vscode/
 /coverage/
 /vendor/
+/composer.lock
+.phpunit.result.cache

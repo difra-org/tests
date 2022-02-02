@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="../tests/bootstrap.php" backupGlobals="false" backupStaticAttributes="false" verbose="true">
-
-	<testsuites>
-		<testsuite name="Difra">
-			<directory suffix=".php">../tests/fw</directory>
-			<exclude>
-				<directory>../fw/lib/cache</directory>
-			</exclude>
-		</testsuite>
-	</testsuites>
-
-	<filter>
-		<whitelist addUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">..</directory>
-			<exclude>
-				<directory>../fw/lib/Libs/ESAPI</directory>
-				<directory>../fw/lib/Libs/Less</directory>
-				<directory>../old-plugins</directory>
-				<file>../fw/lib/bootstrap.php</file>
-				<directory suffix=".php">../tests</directory>
-			</exclude>
-		</whitelist>
-	</filter>
-
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="bootstrap.php" backupGlobals="false" backupStaticAttributes="false" verbose="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage includeUncoveredFiles="true" ignoreDeprecatedCodeUnits="true">
+        <include>
+            <directory suffix=".php">../vendor/difra/difra/src</directory>
+        </include>
+        <report>
+            <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="90"/>
+        </report>
+    </coverage>
+    <testsuites>
+        <testsuite name="all">
+            <directory suffix="Test.php">../vendor/difra/difra/tests</directory>
+        </testsuite>
+    </testsuites>
 </phpunit>
