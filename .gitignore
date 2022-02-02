@@ -1,6 +1,6 @@
 /.idea/
 /.vscode/
-/coverage/
+/build/coverage/
 /vendor/
 /composer.lock
 .phpunit.result.cache
